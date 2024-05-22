@@ -22,6 +22,7 @@ body {
     font-family: "Poppins";
     font-size: 14px;
     background-color: var(--secondary-color-500);
+    background-image: url(https://app.palliarts.nl/wp-content/themes/palliarts-theme/images/background.svg);
     margin: 0;
     padding: 0;
 }
