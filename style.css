@@ -263,6 +263,9 @@ header {
     border-radius: 0 40px 0 0;
     position: relative;
 }
+.featured-block p {
+    z-index: 2;
+}
 .featured-block::before {
     content: '';
     display: block;
