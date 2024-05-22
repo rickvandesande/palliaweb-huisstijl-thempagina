@@ -256,3 +256,30 @@ header {
 .rotate {
     transform: rotate(180deg);
 }
+.featured-block {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 0 40px 0 0;
+    position: relative;
+}
+.featured-block::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://app.palliarts.nl/wp-content/themes/palliarts-theme/images/background.svg);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: right;
+    opacity: 0.4;
+}
+.blue {
+    background-color: var(--secondary-color-300);
+}
+.taupe {
+    background-color: var(--secondary-color-500);
+}
