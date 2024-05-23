@@ -69,12 +69,16 @@ header {
 .secondary-nav-container {
     border: 1px solid var(--primary-color-800);
     border-radius: 30px;
-    padding: 10px 30px;
+    padding: 10px;
 }
 
 .search-item input[type=text] {
     border: none;
-    max-width: 10ch;
+    max-width: 50ch;
+}
+.search-item input[type=text]:focus {
+    outline: none;
+    border: 1px solid transparent;
 }
 .search-item input[type=text]::placeholder {
     color: var(--primary-color-800);
