@@ -290,3 +290,49 @@ header {
 .taupe {
     background-color: var(--secondary-color-500);
 }
+.citation-block {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    max-width: 100%;
+    min-width: 60%;
+    margin: 30px auto;
+    position: relative;
+}
+.citation {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 0;
+    padding-left: 15%;
+    padding-top: 5%;
+    background: transparent;
+    z-index: 100;
+}
+.citation-block::before {
+    content: '';
+    background-color: var(--secondary-color-500);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 20%;
+    height: 0px;
+    padding-bottom: 20%;
+    border-radius: 50% 0 0 0;
+    z-index: 2;
+}
+.citation-block::after {
+    content: '';
+    background-color: #ffffff;
+    background: linear-gradient(135deg, rgba(210,225,255,0.1) 0%, rgba(210,225,255,.8) 40%, rgba(149,186,255,1) 100%);
+    border-radius: 0 50% 50% 50%;
+    width: 20%;
+    padding-bottom: 20%;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    z-index: 3;
+}
+.citation-author {
+    align-self: flex-end;
+}
