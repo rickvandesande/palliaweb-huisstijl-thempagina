@@ -5,6 +5,9 @@
     --secondary-color-500: #f1ece3;
     --secondary-color-300: #d2e1ff;
 }
+*{
+    box-sizing: border-box;
+}
 ul, li {
     padding:0px;
     margin: 0px;
@@ -22,7 +25,6 @@ body {
     font-family: "Poppins";
     font-size: 14px;
     background-color: var(--secondary-color-500);
-    background-image: url(https://app.palliarts.nl/wp-content/themes/palliarts-theme/images/background.svg);
     margin: 0;
     padding: 0;
 }
@@ -96,7 +98,7 @@ header {
 }
 .theme-category-container {
     height: 25px;
-    padding: 0 60px 0 30px;
+    padding: 0 60px 0 60px;
     background-color: var(--touch-color-300);
     border-radius: 0 10px 0 0;
     margin: -25px 30px 0px 0px;
@@ -221,7 +223,6 @@ header {
     font-size: 12px;
     font-weight: 600;
     text-decoration: none !important;
-    color: var(--touch-color-300) !important;
     align-self: flex-end;
     justify-content: flex-end;
     display: flex;
